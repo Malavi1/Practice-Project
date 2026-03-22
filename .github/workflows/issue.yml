@@ -1,7 +1,7 @@
 name: Output even details on issue
 on: issues
 jobs: 
-  issue info:
+  issueinfo:
     runs-on: ubuntu-22.04
     steps:
       - name: output issue details
