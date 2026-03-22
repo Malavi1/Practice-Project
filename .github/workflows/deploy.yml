@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: get code
-        runs: actions/checkout@v3
+        uses: actions/checkout@v3
       - name: install nodejs
-        runs: actions/nodejs@v3 
+        uses: actions/nodejs@v3 
       - name: install dependencies
         run: npm ci 
       - name: run lint 
@@ -16,9 +16,9 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: get code
-        runs: actions/checkout@v3
+        uses: actions/checkout@v3
       - name: install nodejs
-        runs: actions/nodejs@v3 
+        uses: actions/nodejs@v3 
       - name: install dependencies
         run: npm ci 
       - name: run test
@@ -27,9 +27,9 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: get code
-        runs: actions/checkout@v3
+        uses: actions/checkout@v3
       - name: install nodejs
-        runs: actions/nodejs@v3 
+        uses: actions/nodejs@v3 
       - name: install dependencies
         run: npm ci 
       - name: run deploy
