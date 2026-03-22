@@ -7,7 +7,7 @@ jobs:
       - name: get code
         uses: actions/checkout@v3
       - name: install nodejs
-        uses: actions/nodejs@v3 
+        uses: actions/setup-node@v3 
       - name: install dependencies
         run: npm ci 
       - name: run lint 
@@ -18,7 +18,7 @@ jobs:
       - name: get code
         uses: actions/checkout@v3
       - name: install nodejs
-        uses: actions/nodejs@v3 
+        uses: actions/setup-node@v3 
       - name: install dependencies
         run: npm ci 
       - name: run test
@@ -29,7 +29,7 @@ jobs:
       - name: get code
         uses: actions/checkout@v3
       - name: install nodejs
-        uses: actions/nodejs@v3 
+        uses: actions/setup-node@v3 
       - name: install dependencies
         run: npm ci 
       - name: run deploy
